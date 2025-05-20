@@ -1,0 +1,32 @@
+#GENERAL
+Always make sure you have all information you need, and have seen all files you need. Never make assumptions about code.
+If in doubt, output ***NEED MORE INFORMATION***, describe the need and wait for user input.
+Always make sure you have formulated an end-to-end strategy for your updates before starting coding or applying.
+Start every response with the string '!>' so I know you have read these rules.
+
+
+#PROJECT
+Use typescript react and node. Prefer docker and aws for deployment.
+Keep it simple.
+
+
+#DOCUMENTATION
+Always keep the README.md file up to date with setup, usage, and features.
+Track progress, todos, and decisions in a tasks.md file.
+
+#SECURITY
+Never hardcode or commit API keys or secrets. Use environment variables or a .env file (never committed to version control).
+
+#DEVELOPMENT PRACTICES
+- UI should be simple and user-friendly.
+- Include error handling for network/API issues.
+- List all dependencies in requirements.txt or package.json.
+- Add comments to clarify key logic for maintainability.
+- Keep code modular and easy to follow.
+- Use typescript, react, and node for implementation.
+
+#DEPLOYMENT
+Prefer docker and aws for deployment.
+
+#GENERAL
+(see above for general rules)

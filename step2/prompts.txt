@@ -1,0 +1,4 @@
+Hi! I want to create a simpe chat client for the openai API.
+There should be a chat interface with a text input and a send button.
+When the user clicks the send button, the text should be sent to the openai API 
+and the response should be displayed in the chat interface.

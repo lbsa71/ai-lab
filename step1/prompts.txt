@@ -3,7 +3,7 @@ There should be a chat interface with a text input and a send button.
 When the user clicks the send button, the text should be sent to the openai API 
 and the response should be displayed in the chat interface.
 
-Before this, can you update the .windsurfrules file that I started on?
+Before this, can you update the .cursorrules file that I started on?
 
 I want us to add that we should always keep the README.md file up to date, and track progress in a tasks.md file.
 

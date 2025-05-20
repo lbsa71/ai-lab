@@ -6,3 +6,6 @@ and the response should be displayed in the chat interface.
 Before this, can you update the .windsurfrules file that I started on?
 
 I want us to add that we should always keep the README.md file up to date, and track progress in a tasks.md file.
+
+Also add any other instructions you think are relevant to code a quick demo like this.
+

@@ -1,0 +1,13 @@
+#GENERAL
+Always make sure you have all information you need, and have seen all files you need. Never make assumptions about code.
+If in doubt, output ***NEED MORE INFORMATION***, describe the need and wait for user input.
+Always make sure you have formulated an end-to-end strategy for your updates before starting coding or applying.
+Start every response with the string '!>' so I know you have read these rules.
+
+
+#PROJECT
+Use typescript react and node. Prefer docker and aws for deployment.
+Keep it simple.
+
+
+TODO: Finalize this

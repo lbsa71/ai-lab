@@ -4,7 +4,18 @@
 
 ## Mission
 
-Split into two development teams. Build a simple Tetris clone in small, testable steps using TDD and AI assistance.
+Split into development teams. Build a simple Tetris clone in small, testable steps using TDD and AI assistance.
+
+---
+
+## AI Agent Requirements
+
+This workshop requires access to an AI coding assistant. The most common options are:
+
+* **Cursor** - AI-powered code editor with built-in AI assistance
+* **Claude Code** - Claude's coding assistant (available in various IDEs and platforms)
+
+Make sure your dev team has access to one of these AI agents before starting the workshop. You'll use the AI assistant throughout the workshop to help write tests, implement features, and refactor code.
 
 ---
 
@@ -17,8 +28,8 @@ Split into two development teams. Build a simple Tetris clone in small, testable
   * Basic "Hello World!" app to verify setup
   * `README` with quick run instructions: `npm install && npm test && npm start`
 * **Option 1:** Use the provided scaffold — clone the repo and start coding.
-* **Option 2:** Explore setting up your own project using AI agents in the shell — ask the AI to help you scaffold a React/TypeScript project with testing configured.
-* Ask participants to bring laptops and have Node.js installed.
+* **Option 2:** Explore setting up your own project using AI agents in the shell — choose a different technology stack (e.g., Python with Pygame, or another framework) and ask the AI to help you scaffold it with testing configured.
+* Make sure you have a laptop and Node.js or Python installed (depending on your chosen stack).
 
 ---
 
@@ -26,8 +37,10 @@ Split into two development teams. Build a simple Tetris clone in small, testable
 
 1. Split participants into two teams.
 2. **Option A (using scaffold):** Each person clones the starter repo: `git clone https://github.com/lbsa71/ai-lab.git` and installs dependencies with `npm install`.
-3. **Option B (exploring setup):** Use AI agents in the shell to scaffold a React/TypeScript project with testing. Ask the AI to set up Vite, React, TypeScript, and Jest.
-4. Run the test suite to show passing/failing tests: `npm test`
+3. **Option B (exploring setup):** Use AI agents in the shell to scaffold your own project with a different technology stack. For example:
+   * Python with Pygame: Ask the AI to set up a Python project with Pygame and pytest
+   * Or choose another stack: React/TypeScript, vanilla JavaScript, or any other framework you prefer
+4. Run the test suite to show passing/failing tests: `npm test` (or `pytest` for Python, etc.)
 5. Explain the goal: incremental TDD steps to a playable Tetris.
 
 ---

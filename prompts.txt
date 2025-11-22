@@ -2,18 +2,20 @@
 
 Please help establish the foundational scaffolding for building a simple OpenAI-based chatbot with a web interface. I need you to create the following documentation and configuration files:
 
-1. **ARCHITECTURE.md** - A comprehensive architecture document that outlines:
-   - System architecture and component structure
-   - Technology stack decisions (frontend framework, state management, API integration approach)
-   - Data flow and communication patterns
-   - Security considerations (API key handling, CORS, etc.)
-   - Component hierarchy and responsibilities
-   - API integration strategy with OpenAI
+**IMPORTANT**: All documentation should be terse and to the point. Avoid verbosity and focus on essential information only.
 
-2. **IMPLEMENTATION_STRATEGY.md** - A detailed implementation strategy that includes:
+1. **ARCHITECTURE.md** - A concise architecture document that outlines:
+   - System architecture and component structure (frontend + backend)
+   - Technology stack decisions (frontend framework, backend framework, state management)
+   - Data flow and communication patterns
+   - Security: API keys MUST be stored server-side only, never in the frontend. Backend is required to proxy OpenAI API calls.
+   - Component hierarchy and responsibilities
+   - API integration strategy (frontend → backend → OpenAI)
+
+2. **IMPLEMENTATION_STRATEGY.md** - A concise implementation strategy that includes:
    - Phased approach to building the chatbot
    - Step-by-step implementation plan
-   - Dependencies and packages to install
+   - Dependencies and packages to install (frontend and backend)
    - Key features to implement (chat interface, message history, loading states, error handling)
    - Testing strategy
    - Environment setup requirements
@@ -27,7 +29,7 @@ Please help establish the foundational scaffolding for building a simple OpenAI-
 4. **README.md** - Update the existing README.md to include:
    - Project description for the OpenAI chatbot
    - Setup instructions including environment variable configuration
-   - API key setup instructions
+   - API key setup instructions (backend only)
    - Development workflow
    - Usage instructions
    - Project structure overview
@@ -39,30 +41,33 @@ Please help establish the foundational scaffolding for building a simple OpenAI-
    - API integration patterns to follow
    - Code organization principles
 
-Please ensure all documents are comprehensive, well-structured, and provide clear guidance for the implementation phase. The architecture should be practical and suitable for a simple but production-ready chatbot interface.
+Please ensure all documents are terse, well-structured, and provide clear guidance for the implementation phase. The architecture should be practical and suitable for a simple but production-ready chatbot interface.
 
 
 === PROMPT 2: Chatbot Implementation ===
 
 Now that we have the architecture and implementation strategy in place, please implement the OpenAI-based chatbot with a web interface according to the specifications in ARCHITECTURE.md and IMPLEMENTATION_STRATEGY.md.
 
+**CRITICAL SECURITY REQUIREMENT**: API keys must NEVER be stored in the frontend. You must create a backend server that handles all OpenAI API calls. The frontend should only communicate with your backend API.
+
 Key requirements:
-- Create a clean, modern chat interface with React and TypeScript
-- Integrate with OpenAI API (using the chat completions endpoint)
+- Create a clean, modern chat interface with React and TypeScript (frontend)
+- Create a backend server to proxy OpenAI API calls (API keys stored server-side only)
+- Integrate with OpenAI API via backend (using the chat completions endpoint)
 - Implement message history and conversation management
 - Add proper loading states and error handling
-- Ensure secure API key handling (use environment variables)
 - Make the UI responsive and user-friendly
 - Follow the coding standards defined in .cursorrules
 
 Please:
-1. Install all necessary dependencies
-2. Create the required components and utilities
-3. Set up environment variable configuration
-4. Implement the chat functionality with OpenAI integration
-5. Add proper TypeScript types
-6. Update IMPLEMENTATION_PROGRESS.md as you complete each task
-7. Ensure the code is well-commented and follows best practices
+1. Install all necessary dependencies (frontend and backend)
+2. Create the backend API server with OpenAI integration
+3. Create the required frontend components and utilities
+4. Set up environment variable configuration (backend only for API keys)
+5. Implement the chat functionality with proper frontend-backend communication
+6. Add proper TypeScript types
+7. Update IMPLEMENTATION_PROGRESS.md as you complete each task
+8. Ensure the code is well-commented and follows best practices
 
 The chatbot should be fully functional and ready for use once implementation is complete.
 

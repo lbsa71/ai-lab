@@ -1,0 +1,68 @@
+=== PROMPT 1: AI Scaffolding Preparation ===
+
+Please help establish the foundational scaffolding for building a simple OpenAI-based chatbot with a web interface. I need you to create the following documentation and configuration files:
+
+1. **ARCHITECTURE.md** - A comprehensive architecture document that outlines:
+   - System architecture and component structure
+   - Technology stack decisions (frontend framework, state management, API integration approach)
+   - Data flow and communication patterns
+   - Security considerations (API key handling, CORS, etc.)
+   - Component hierarchy and responsibilities
+   - API integration strategy with OpenAI
+
+2. **IMPLEMENTATION_STRATEGY.md** - A detailed implementation strategy that includes:
+   - Phased approach to building the chatbot
+   - Step-by-step implementation plan
+   - Dependencies and packages to install
+   - Key features to implement (chat interface, message history, loading states, error handling)
+   - Testing strategy
+   - Environment setup requirements
+
+3. **IMPLEMENTATION_PROGRESS.md** - A progress tracking document with:
+   - Checklist of implementation tasks
+   - Status tracking (not started, in progress, completed)
+   - Notes section for each task
+   - This should be initialized with all planned tasks from the implementation strategy
+
+4. **README.md** - Update the existing README.md to include:
+   - Project description for the OpenAI chatbot
+   - Setup instructions including environment variable configuration
+   - API key setup instructions
+   - Development workflow
+   - Usage instructions
+   - Project structure overview
+
+5. **.cursorrules** - Create a Cursor IDE rules file that includes:
+   - Project-specific coding standards and conventions
+   - React/TypeScript best practices for this project
+   - Guidelines for component structure and naming
+   - API integration patterns to follow
+   - Code organization principles
+
+Please ensure all documents are comprehensive, well-structured, and provide clear guidance for the implementation phase. The architecture should be practical and suitable for a simple but production-ready chatbot interface.
+
+
+=== PROMPT 2: Chatbot Implementation ===
+
+Now that we have the architecture and implementation strategy in place, please implement the OpenAI-based chatbot with a web interface according to the specifications in ARCHITECTURE.md and IMPLEMENTATION_STRATEGY.md.
+
+Key requirements:
+- Create a clean, modern chat interface with React and TypeScript
+- Integrate with OpenAI API (using the chat completions endpoint)
+- Implement message history and conversation management
+- Add proper loading states and error handling
+- Ensure secure API key handling (use environment variables)
+- Make the UI responsive and user-friendly
+- Follow the coding standards defined in .cursorrules
+
+Please:
+1. Install all necessary dependencies
+2. Create the required components and utilities
+3. Set up environment variable configuration
+4. Implement the chat functionality with OpenAI integration
+5. Add proper TypeScript types
+6. Update IMPLEMENTATION_PROGRESS.md as you complete each task
+7. Ensure the code is well-commented and follows best practices
+
+The chatbot should be fully functional and ready for use once implementation is complete.
+

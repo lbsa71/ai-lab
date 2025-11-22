@@ -14,10 +14,10 @@ Please help establish the foundational scaffolding for building a simple OpenAI-
 
 2. **IMPLEMENTATION_STRATEGY.md** - A concise implementation strategy that includes:
    - Phased approach to building the chatbot
-   - Step-by-step implementation plan
+   - Step-by-step implementation plan using commands (npm, npx, vite, etc.) to establish components, not by creating files directly
    - Dependencies and packages to install (frontend and backend)
    - Key features to implement (chat interface, message history, loading states, error handling)
-   - Testing strategy
+   - Testing strategy following TDD approach
    - Environment setup requirements
 
 3. **IMPLEMENTATION_PROGRESS.md** - A progress tracking document with:
@@ -36,38 +36,17 @@ Please help establish the foundational scaffolding for building a simple OpenAI-
 
 5. **.cursorrules** - Create a Cursor IDE rules file that includes:
    - Project-specific coding standards and conventions
+   - requirement to read up on all relevant .md files
    - React/TypeScript best practices for this project
    - Guidelines for component structure and naming
    - API integration patterns to follow
    - Code organization principles
+   - TDD (Test-Driven Development) approach: write tests first, then implement functionality
 
 Please ensure all documents are terse, well-structured, and provide clear guidance for the implementation phase. The architecture should be practical and suitable for a simple but production-ready chatbot interface.
 
 
 === PROMPT 2: Chatbot Implementation ===
 
-Now that we have the architecture and implementation strategy in place, please implement the OpenAI-based chatbot with a web interface according to the specifications in ARCHITECTURE.md and IMPLEMENTATION_STRATEGY.md.
-
-**CRITICAL SECURITY REQUIREMENT**: API keys must NEVER be stored in the frontend. You must create a backend server that handles all OpenAI API calls. The frontend should only communicate with your backend API.
-
-Key requirements:
-- Create a clean, modern chat interface with React and TypeScript (frontend)
-- Create a backend server to proxy OpenAI API calls (API keys stored server-side only)
-- Integrate with OpenAI API via backend (using the chat completions endpoint)
-- Implement message history and conversation management
-- Add proper loading states and error handling
-- Make the UI responsive and user-friendly
-- Follow the coding standards defined in .cursorrules
-
-Please:
-1. Install all necessary dependencies (frontend and backend)
-2. Create the backend API server with OpenAI integration
-3. Create the required frontend components and utilities
-4. Set up environment variable configuration (backend only for API keys)
-5. Implement the chat functionality with proper frontend-backend communication
-6. Add proper TypeScript types
-7. Update IMPLEMENTATION_PROGRESS.md as you complete each task
-8. Ensure the code is well-commented and follows best practices
-
-The chatbot should be fully functional and ready for use once implementation is complete.
+Implement the OpenAI-based chatbot according to ARCHITECTURE.md, IMPLEMENTATION_STRATEGY.md, and .cursorrules. Follow the step-by-step plan, use commands (npm, npx, vite, etc.) for setup, follow TDD approach, and update IMPLEMENTATION_PROGRESS.md as you complete each task.
 
